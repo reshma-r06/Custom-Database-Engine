@@ -1,0 +1,10 @@
+^F:\DBMS\CMAKEPROJECT1\BUILD\CMAKEFILES\E0BFE1EC8F3E0CB52913D2103BAE454B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/dbms/CMakeProject1 -BF:/dbms/CMakeProject1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/dbms/CMakeProject1/build/MiniDBMS.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
